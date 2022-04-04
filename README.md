@@ -1,0 +1,2 @@
+# culsZnackovaciJazyky
+school stuff repo

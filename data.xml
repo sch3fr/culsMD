@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?><!-- data.xml uloženo ve složce ukulele-->
 <zaznamy>
-  <mereni id="">
+  <mereni id="001">
+    <teplota>2.3</teplota>
   </mereni>
 </zaznamy>

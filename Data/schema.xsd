@@ -1,6 +1,41 @@
 <!-- definicni soubor -->
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<xs:element name ="knihovnaHer">
+<xs:element name ="herniEvidence">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="hry"/>
+      <xs:element ref="platformy"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:element/>
 
-<xs:element>
+<xs:element name ="hry">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="nazev"/>
+      <xs:element ref="zanr"/>
+      <xs:element ref="hodnoceni"/>
+      <xs:element ref="multiplayer"/>
+      <xs:element ref="platforma"/>
+      <xs:element ref="porizovaciCena"/>
+      <xs:element ref="datumVydani"/>
+      <xs:element ref="datumNakupu"/>
+      <xs:element ref="vyvojar"/>
+      <xs:element ref="vydavatel"/>
+      <xs:element ref="specialniHardware"/>
+      <xs:element ref="jazyk"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:element/>
+
+<xs:element name="platformy">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="jmeno"/>
+      <xs:element ref="datumRegistrace"/>
+      <xs:element ref="ciloveZarizeni"/>
+    <xs:sequence>
+  <xs:complexType/>
+<xs:element/>

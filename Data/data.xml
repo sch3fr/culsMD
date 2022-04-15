@@ -1,10 +1,11 @@
 <!-- datovy soubor -->
 <?xml version="1.0" encoding="utf-8"?>
 
-<knihovnaHer>
+<herniEvidence>
   <hry dohrana="">
     <nazev>
     <zanr>
+    <hodnoceni>
     <multiplayer>
     <platforma>
     <porizovaciCena mena="">
@@ -18,7 +19,7 @@
   </hry>
   <platformy>
     <jmeno>
-    <clenstviOd>
+    <datumRegistrace>
     <ciloveZarizeni>
   <platformy>
-</knihovnaHer>
+</herniEvidence>

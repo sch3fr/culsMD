@@ -17,7 +17,7 @@
       <xs:element name="nazev" type="xs:string" >
         <xs:attribute name="jazyk" use="required" type="lang">
       </xs:element>
-      <xs:element name="isbn"/ type="xs:string" >
+      <xs:element name="isbn" type="xs:string" />
       <xs:element name="autor" minOccurs="1" maxOccurs="unbounded" type="xs:string" />
       <xs:element ref="cena"/>
     </xs:sequence>

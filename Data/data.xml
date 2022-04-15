@@ -1,0 +1,24 @@
+<!-- datovy soubor -->
+<?xml version="1.0" encoding="utf-8"?>
+
+<knihovnaHer>
+  <hry dohrana="">
+    <nazev>
+    <zanr>
+    <multiplayer>
+    <platforma>
+    <porizovaciCena mena="">
+    <datumVydani>
+    <datumNakupu>
+    <vyvojar>
+    <vydavatel>
+    <specialniHardware>
+    <jazyk podporaCestiny="">
+
+  </hry>
+  <platformy>
+    <jmeno>
+    <clenstviOd>
+    <ciloveZarizeni>
+  <platformy>
+</knihovnaHer>

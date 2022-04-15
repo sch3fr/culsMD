@@ -1,0 +1,67 @@
+<!-- definicni soubor -->
+<?xml version="1.0" encoding="utf-8"?>
+
+<xs:element name="knihovna">
+  <xs:copmlexType>
+    <xs:sequence>
+      <xs:element ref="knihy"/> <!-- Dejfinice znacky je nize -->
+      <xs:element ref="zamestnanci"/> <!-- Dejfinice znacky je nize -->
+      <xs:element ref="ctenari"/> <!-- Dejfinice znacky je nize -->
+    <xs:sequence>
+  </xs:copmlexType>
+</xs:element>
+
+<xs:element name="knihy"> <!-- Dejfinujeme znacku z ref -->
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="nazev" type="xs:string" >
+        <xs:attribute name="jazyk" use="required" type="lang">
+      </xs:element>
+      <xs:element name="isbn"/ type="xs:string" >
+      <xs:element name="autor" minOccurs="1" maxOccurs="unbounded" type="xs:string" />
+      <xs:element ref="cena"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs.element>
+
+<xs:element name="cena"> <!-- Znacka s omezenim na vstupu -->
+  <xs:simpleType>
+    <xs:restriction base ="xs:integer">
+      <xs:minInclusive value="1">
+      <xs:maxInclusive value="10000">
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:simpleType name="hodnota"> <!-- Vlastni datovy typ -->
+  <xs:restriction base ="xs:integer">
+    <xs:minInclusive value="1">
+    <xs:maxInclusive value="10000">
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="lang">
+  <xs:restriction base ="xs:string">
+    <xs:enumeration value="cs"/>
+    <xs:enumeration value="en"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element>
+  <xs:complexType>
+    <xs:sequence>
+      <xs:group ref="adresa"> <!-- Pouziti skupiny znacek -->
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:group name="adresa"> <!-- Definice skupiny znacek -->
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="ulice" type="xs:string">
+      <xs:element name="cp" type="xs:string">
+      <xs:element name="mesto" type="xs:string">
+      <xs:element name="psc" type="xs:string">
+    </xs:sequence>
+  </xs:complexType>
+</xs:group>

@@ -1,6 +1,7 @@
 # Markdown Languages @ CULS
 
-<p> This is a repository for my homework from Markdown Languages class at CULS. There are two projects. The Data one with XML, XSD and XSL, and the HTML one, including a CSS file. </p>
+<p> This is a repository for my homework from Markdown Languages class at CULS. There are two projects. The Data one with XML, XSD and XSL, and the HTML one, including a CSS file. <br>
+The Demos folder contains actual files I worked on in class.</p>
 
 ## Requirements
 
@@ -12,6 +13,6 @@
 
 ### HTML project
 
-* HTML5 file talking about my bachelor thesis
+* HTML5 file talking describing bachelor thesis
 * basic CSS without frameworks
 * using following elements: article, section, h1 - h3, aside, header, footer, naw

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file:/H:/zj/4/test.xsl"?>
+
+<zaznamy>
+  <mereni id="001">
+    <teplota>3.6</teplota>
+    <vllhkost>56</vllhkost>
+  </mereni>
+  
+  <mereni id="002">
+    <teplota>5.4</teplota>
+    <vllhkost>54</vllhkost>
+  </mereni>
+  
+  <mereni id="003">
+    <teplota>8.2</teplota>
+    <vllhkost>64</vllhkost>
+  </mereni>
+  
+  <mereni id="004">
+    <teplota>7.6</teplota>
+    <vllhkost>61</vllhkost>
+  </mereni>
+</zaznamy>
+

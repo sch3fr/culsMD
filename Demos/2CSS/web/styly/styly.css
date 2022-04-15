@@ -1,0 +1,50 @@
+/* CSS Document */
+p
+{
+    text-align:justify;
+    color:MediumVioletRed;
+}
+
+p.zeleny
+{
+    color:green;
+}
+
+h1
+{
+    text-align:center;
+    color:Navy;
+}
+
+nav a
+{
+    text-decoration:none;
+    color:Cyan;
+}
+
+nav a:hover
+{
+    color:White;
+    background-color:black;
+}
+
+section > a
+{
+    text-decoration:none;
+    color:Red;
+}
+
+h2 + p
+{
+    color:#B00B69;
+}
+
+#hlavni
+{
+    font-size:69pt;
+}
+
+p, h2
+{
+    font-size:16pt;
+}

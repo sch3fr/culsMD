@@ -1,0 +1,17 @@
+<!-- datovy soubor -->
+<?xml version="1.0" encoding="utf-8"?>
+<knihovna>
+  <knihy>
+    <nazev jazyk=""...>
+    <isbn...>
+    <autor...>
+    <autor...>
+    <cena mena="CZK"...>
+  </knihy>
+  <zamestnanci>
+  
+  </zamestnanci>
+  <ctenari>
+  
+  </ctenari>
+</knihovna>

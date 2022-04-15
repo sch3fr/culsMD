@@ -1,6 +1,7 @@
-<!-- definicni soubor -->
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- definicni soubor -->
 
 <xs:element name ="herniEvidence">
   <xs:complexType>
@@ -9,33 +10,61 @@
       <xs:element ref="platformy"/>
     </xs:sequence>
   </xs:complexType>
-<xs:element/>
+</xs:element>
 
 <xs:element name ="hry">
   <xs:complexType>
     <xs:sequence>
-      <xs:element ref="nazev"/>
-      <xs:element ref="zanr"/>
-      <xs:element ref="hodnoceni"/>
-      <xs:element ref="multiplayer"/>
-      <xs:element ref="platforma"/>
-      <xs:element ref="porizovaciCena"/>
-      <xs:element ref="datumVydani"/>
-      <xs:element ref="datumNakupu"/>
-      <xs:element ref="vyvojar"/>
-      <xs:element ref="vydavatel"/>
-      <xs:element ref="specialniHardware"/>
-      <xs:element ref="jazyk"/>
+      <xs:element name="nazev" type="xs:string"/>
+      <xs:element name="zanr" type="xs:string"/>
+      <xs:element name="hodnoceni" type="xs:integer"/>
+      <xs:element name="multiplayer" type="xs:boolean"/> 
+      <xs:element name="platforma" type="xs:string"/>
+      <xs:element name="porizovaciCena" type="xs:integer">
+        <xs:attribute ref="mena"/>
+      </xs:element>
+      <xs:element name="datumVydani" type="xs:date"/>
+      <xs:element name="datumNakupu" type="xs:date"/>
+      <xs:element name="vyvojar" type="xs:string"/>
+      <xs:element name="vydavatel" type="xs:string"/>
+      <xs:element name="specialniHardware" type="xs:string"/>
+      <xs:element name="jazyk" type="xs:string">
+        <xs:attribute name="podporaCestiny" type="cestina"/>
+      </xs:element>
     </xs:sequence>
+    <xs:attribute name="dohrana" use="required" type="xs:boolean"/>
   </xs:complexType>
-<xs:element/>
+</xs:element>
 
 <xs:element name="platformy">
   <xs:complexType>
     <xs:sequence>
-      <xs:element ref="jmeno"/>
-      <xs:element ref="datumRegistrace"/>
-      <xs:element ref="ciloveZarizeni"/>
-    <xs:sequence>
-  <xs:complexType/>
-<xs:element/>
+      <xs:element name="jmeno"/>
+      <xs:element name="datumRegistrace"/>
+      <xs:element name="ciloveZarizeni"/>
+      <xs:element name="firma"/>
+    </xs:sequence>
+    <xs:attribute name="typ"/>
+  </xs:complexType>
+</xs:element>
+
+<!-- Znacka s omezenim na vstupu -->
+<xs:element name="mena">
+  <xs:simpleType>
+    <xs:restriction base ="xs:string">
+      <xs:enumeration value="CZK"/>
+      <xs:enumeration value="EUR"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<!-- Vlastni datovy typ -->
+<xs:simpleType name="cestina">
+  <xs:restriction base ="xs:string">
+    <xs:enumeration value="neni"/>
+    <xs:enumeration value="titulky"/>
+    <xs:enumeration value="titulky a dabing"/>
+  </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

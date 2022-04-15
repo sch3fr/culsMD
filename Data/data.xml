@@ -1,25 +1,176 @@
-<!-- datovy soubor -->
 <?xml version="1.0" encoding="utf-8"?>
 
-<herniEvidence>
-  <hry dohrana="">
-    <nazev>
-    <zanr>
-    <hodnoceni>
-    <multiplayer>
-    <platforma>
-    <porizovaciCena mena="">
-    <datumVydani>
-    <datumNakupu>
-    <vyvojar>
-    <vydavatel>
-    <specialniHardware>
-    <jazyk podporaCestiny="">
+<!-- datovy soubor -->
 
+<herniEvidence>
+  <hry dohrana="1">
+    <nazev>Half-Life 2</nazev>
+    <zanr>FPS</zanr>
+    <hodnoceni>92</hodnoceni>
+    <multiplayer>0</multiplayer>
+    <platforma>Steam</platforma>
+    <porizovaciCena mena="EUR">3.49</porizovaciCena>
+    <datumVydani>16.11.2004</datumVydani>
+    <datumNakupu>16.6.2015</datumNakupu>
+    <vyvojar>Valve</vyvojar>
+    <vydavatel>Valve</vydavatel>
+    <specialniHardware></specialniHardware>
+    <jazyk podporaCestiny="titulky">en</jazyk>
   </hry>
-  <platformy>
-    <jmeno>
-    <datumRegistrace>
-    <ciloveZarizeni>
-  <platformy>
+
+  <hry dohrana="0">
+    <nazev>TrackMania United Forever</nazev>
+    <zanr>Racing</zanr>
+    <hodnoceni>82</hodnoceni>
+    <multiplayer>1</multiplayer>
+    <platforma>Steam</platforma>
+    <porizovaciCena mena="EUR">14.99</porizovaciCena>
+    <datumVydani>15.4.2008</datumVydani>
+    <datumNakupu>8.3.2022</datumNakupu>
+    <vyvojar>Nadeo</vyvojar>
+    <vydavatel>Ubisoft</vydavatel>
+    <specialniHardware></specialniHardware>
+    <jazyk podporaCestiny="titulky">cs</jazyk>
+  </hry>
+
+  <hry dohrana="1">
+    <nazev>Mafia II</nazev>
+    <zanr>Action</zanr>
+    <hodnoceni>83</hodnoceni>
+    <multiplayer>0</multiplayer>
+    <platforma>Steam</platforma>
+    <porizovaciCena mena="EUR">13.12</porizovaciCena>
+    <datumVydani>23.8.2010</datumVydani>
+    <datumNakupu>5.6.2016</datumNakupu>
+    <vyvojar>2K Czech</vyvojar>
+    <vydavatel>2K Games</vydavatel>
+    <specialniHardware></specialniHardware>
+    <jazyk podporaCestiny="titulky a dabing">cs</jazyk>
+  </hry>
+
+  <hry dohrana="1">
+    <nazev>Burnout Paradise: The Ultimate Box</nazev>
+    <zanr>Racing</zanr>
+    <hodnoceni>76</hodnoceni>
+    <multiplayer>1</multiplayer>
+    <platforma>Steam</platforma>
+    <porizovaciCena mena="EUR">1.31</porizovaciCena>
+    <datumVydani>5.9.2008</datumVydani>
+    <datumNakupu>16.6.2015</datumNakupu>
+    <vyvojar>Criterion Games</vyvojar>
+    <vydavatel>Electronic Arts</vydavatel>
+    <specialniHardware>Webkamera</specialniHardware>
+    <jazyk podporaCestiny="titulky">en</jazyk>
+  </hry>
+
+  <hry dohrana="1">
+    <nazev>Grand Theft Auto: San Andreas</nazev>
+    <zanr>Action</zanr>
+    <hodnoceni>89</hodnoceni>
+    <multiplayer>0</multiplayer>
+    <platforma>Steam</platforma>
+    <porizovaciCena mena="">2.49</porizovaciCena>
+    <datumVydani>7.6.2005</datumVydani>
+    <datumNakupu>30.11.2015</datumNakupu>
+    <vyvojar>Rockstar North</vyvojar>
+    <vydavatel>Rockstar Games</vydavatel>
+    <specialniHardware></specialniHardware>
+    <jazyk podporaCestiny="neni">en</jazyk>
+  </hry>
+
+  <hry dohrana="0">
+    <nazev>Stardew Valley</nazev>
+    <zanr>RPG</zanr>
+    <hodnoceni>87</hodnoceni>
+    <multiplayer>1</multiplayer>
+    <platforma>Nintendo eshop</platforma>
+    <porizovaciCena mena="CZK">350</porizovaciCena>
+    <datumVydani>5.10.2017</datumVydani>
+    <datumNakupu>16.4.2020</datumNakupu>
+    <vyvojar>ConcernedApe</vyvojar>
+    <vydavatel>ConcernedApe</vydavatel>
+    <specialniHardware></specialniHardware>
+    <jazyk podporaCestiny="neni">en</jazyk>
+  </hry>
+
+  <hry dohrana="1">
+    <nazev>Deus Ex: Human Revolution</nazev>
+    <zanr>RPG</zanr>
+    <hodnoceni>85</hodnoceni>
+    <multiplayer>0</multiplayer>
+    <platforma>Steam</platforma>
+    <porizovaciCena mena="EUR">4.99</porizovaciCena>
+    <datumVydani>23.8.2011</datumVydani>
+    <datumNakupu>23.12.2016</datumNakupu>
+    <vyvojar>Eidos Interactive</vyvojar>
+    <vydavatel>Square Enix</vydavatel>
+    <specialniHardware></specialniHardware>
+    <jazyk podporaCestiny="neni">en</jazyk>
+  </hry>
+
+  <hry dohrana="1">
+    <nazev>Celeste</nazev>
+    <zanr>Platformer</zanr>
+    <hodnoceni>86</hodnoceni>
+    <multiplayer>0</multiplayer>
+    <platforma>Nintendo eshop</platforma>
+    <porizovaciCena mena="CZK">120</porizovaciCena>
+    <datumVydani>25.1.2018</datumVydani>
+    <datumNakupu>24.6.2021</datumNakupu>
+    <vyvojar>Matt Makes Games</vyvojar>
+    <vydavatel>Matt Makes Games</vydavatel>
+    <specialniHardware></specialniHardware>
+    <jazyk podporaCestiny="neni">en</jazyk>
+  </hry>
+
+  <hry dohrana="1">
+    <nazev>Watch_Dogs 2</nazev>
+    <zanr>Action</zanr>
+    <hodnoceni>70</hodnoceni>
+    <multiplayer>1</multiplayer>
+    <platforma>Uplay</platforma>
+    <porizovaciCena mena="EUR">8.99</porizovaciCena>
+    <datumVydani>28.11.2016</datumVydani>
+    <datumNakupu>22.5.2019</datumNakupu>
+    <vyvojar>Ubisoft</vyvojar>
+    <vydavatel>Ubisoft</vydavatel>
+    <specialniHardware></specialniHardware>
+    <jazyk podporaCestiny="titulky">en</jazyk>
+  </hry>
+  
+  <hry dohrana="0">
+    <nazev>Ring Fit Adventure</nazev>
+    <zanr>Fitness RPG</zanr>
+    <hodnoceni>86</hodnoceni>
+    <multiplayer>0</multiplayer>
+    <platforma>Nintendo eshop</platforma>
+    <porizovaciCena mena="CZK">1399</porizovaciCena>
+    <datumVydani>18.10.2019</datumVydani>
+    <datumNakupu>5.5.2021</datumNakupu>
+    <vyvojar>Nintendo</vyvojar>
+    <vydavatel>Nintendo</vydavatel>
+    <specialniHardware>Ring Fit Ring and Leg-strap</specialniHardware>
+    <jazyk podporaCestiny="neni">en</jazyk>
+  </hry>
+
+  <platformy typ="PC">
+    <jmeno>Steam</jmeno>
+    <datumRegistrace>31.7.2014</datumRegistrace>
+    <ciloveZarizeni>Osobni pocitac</ciloveZarizeni>
+    <firma>Valve</firma>
+  </platformy>
+
+  <platformy typ="PC">
+    <jmeno>Uplay</jmeno>
+    <datumRegistrace>21.12.2015</datumRegistrace>
+    <ciloveZarizeni>Osobni pocitac</ciloveZarizeni>
+    <firma>Ubisoft</firma>
+  </platformy>
+
+  <platformy typ="Konzole">
+    <jmeno>Nintendo eshop</jmeno>
+    <datumRegistrace>4.4.2020</datumRegistrace>
+    <ciloveZarizeni>Nintendo Switch</ciloveZarizeni>
+    <firma>Nintendo</firma>
+  </platformy>
 </herniEvidence>

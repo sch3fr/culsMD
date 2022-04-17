@@ -7,9 +7,9 @@ The Demos folder contains actual files I worked on in class.</p>
 
 ### Data project
 
-* XML file with data, 20 elements, 5 atributes, 10 entities
-* XSD custom data type, defining the XML file structure
-* XSL for export to HTML or JSON, using if, when, and sorting
+* ~~XML file with data, 20 elements, 5 atributes, 10 entities~~ done ✅
+* ~~XSD custom data type, defining the XML file structure~~ done ✅
+* ~~XSL for export to HTML or JSON, using if, when, and sorting~~ done ✅
 
 ### HTML project
 

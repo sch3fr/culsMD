@@ -22,7 +22,7 @@
       <xs:element name="multiplayer" type="xs:boolean"/>
       <xs:element name="platforma" type="xs:string"/>
       <xs:element name="porizovaciCena" type="xs:decimal">
-        <xs:attribute ref="mena">
+        <xs:attribute ref="mena"/>
       </xs:element>
       <xs:element name="datumVydani" type="xs:date"/>
       <xs:element name="datumNakupu" type="xs:date"/>
@@ -30,7 +30,7 @@
       <xs:element name="vydavatel" type="xs:string"/>
       <xs:element name="specialniHardware" type="xs:string"/>
       <xs:element name="jazyk" type="xs:string">
-        <xs:attribute ref="podporaCestiny">
+        <xs:attribute ref="podporaCestiny"/>
       </xs:element>
     </xs:sequence>
     <xs:attribute ref="dohrana"/>

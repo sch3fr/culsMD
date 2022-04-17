@@ -12,7 +12,7 @@
     <body>
       <h1>Knihovna her</h1>
       <table border="1">
-        <caption>Seznam her podle hodnocení</caption>
+        <caption>Seznam her podle hodnocení. Zelená - hru jsem dohrál; Červená - hru jsem ještě nedohrál</caption>
         <tr>
           <th>Název</th>
           <th>Žánr</th>
@@ -30,13 +30,36 @@
         <xsl:for-each select="hry">
           <xsl:sort select="hodnoceni" order="descending"/>
           <tr>
-            <td><xsl:value-of select="nazev"/></td>
+            <xsl:if test="@dohrana='1'">
+              <td bgcolor="66CC66"><xsl:value-of select="nazev"/></td>
+            </xsl:if>
+            <xsl:if test="@dohrana='0'">
+              <td bgcolor="FF6666"><xsl:value-of select="nazev"/></td>
+            </xsl:if>
             
             <td><xsl:value-of select="zanr"/></td>
             <td><xsl:value-of select="hodnoceni"/></td>
-            <td><xsl:value-of select="multiplayer"/></td>
+
+            <xsl:choose>
+              <xsl:when test="multiplayer='0'">
+                <td>Pouze singleplayer</td>
+              </xsl:when>
+              <xsl:otherwise>
+                <td>Ano</td>
+              </xsl:otherwise>
+            </xsl:choose>
+
             <td><xsl:value-of select="platforma"/></td>
-            <td><xsl:value-of select="porizovaciCena"/></td>
+
+            <xsl:choose>
+              <xsl:when test="/porizovaciCena[@mena='EUR']">
+                <td><xsl:value-of select="porizovaciCena * 24"/> CZK</td> <!-- Nevím, proč mi to nejde. -->
+              </xsl:when>
+              <xsl:otherwise>
+                <td><xsl:value-of select="porizovaciCena"/> CZK</td>
+              </xsl:otherwise>
+            </xsl:choose>
+
             <td><xsl:value-of select="datumVydani"/></td>
             <td><xsl:value-of select="datumNakupu"/></td>
             <td><xsl:value-of select="vyvojar"/></td>

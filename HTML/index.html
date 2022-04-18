@@ -8,7 +8,7 @@
 </head>
   <body>
     <header>
-      <h1>Návrh a implementace mechanické klávesnice</h1>
+      <h1>Návrh a implementace mechanické klávesnice s využitím mikrokontroleru</h1>
       <nav>
         <a href="#cil">Cíl práce</a>
         <a href="#metodika">Metodika</a>
@@ -24,17 +24,61 @@
             platformu pro návrh a následnou výrobu mechanické klávesnice. Výsledkem práce 
             by pak měla být funkční a praktická klávesnice pro každodenní využití.</p>
           <h3>Důvody pro design vlastní klávesnice</h3>
-          <p>nějakej text idk/idc</p>
+          <ul>
+            <li>Velikost - klasické klávesnice zabírají moc místa na stole</li>
+            <li>Programovatelnost - možnost přidávání vlastních funkcí bez nutnosti 
+              instalace speciálního software</li>
+            <li>Speciální funkce - podpora rotačních enkodérů, rozdělený mezerník apod.</li>
+            <li>Open source - kdokoliv bude mít možnost tuto klávesnici postavit</li>
+            <li>ISO klávesy - velký enter a krátký levý shift</li>
+          </ul>
+          <p>Klávesnic, které splňují tyto požadavky, existuje minimum, pokud nějaká
+            taková existuje. Takže jsem se rozhodl obětovat se, a takovou klávesnici 
+            navrhnout.</p>
         </section>
         <section>
           <h2>Metodika</h2>
-          <p>Šasi klávesnice bude vymodelováno pomocí open source aplikace OpenSCAD,
-            která využívá speciální procedurální programovací jazyk pro pro tvorbu
-            3D modelů. 
-          </p>
+          
         </section>
         <section>
           <h2>Teoretická část</h2>
+          <p>Na začátku práce budou vysvětleny rozdíly mezi třemi hlavními druhy 
+            spínačů pro mechanické klávesnice (lineární, taktilní, klikající) a 
+            různé druhy rozložení klávesnic (ISO a ANSI, 100%, TKL, 75, 60, 40, Split, 
+            Alice atp.). Následovat bude samotný design a firmware. Součástí práce 
+            bude i elektrické schéma klávesnice, zobrazující zapojení kláves do matice
+            a následné připojení k mikrořadiči. Z důvodu úspory peněz bude klávesnice
+            ručně drátovaná, bez využití služeb pro návrh a výrobu plošných spojů.
+          </p>
+          <h3>3D model</h3>
+          <p>Šasi klávesnice bude vymodelováno pomocí open source aplikace OpenSCAD,
+            která využívá speciální procedurální programovací jazyk pro pro tvorbu
+            3D modelů. Model by měl splňovat následující požadavky:
+          </p>
+          <ul>
+            <li>Nízká náročnost na tisk</li>
+            <li>Přístup k elektronice pro možnost opravy</li>
+            <li>Malá velikost pro možnost tisku i na menších tiskárnách jako Prusa Mini</li>
+            <li>Místo na spínč pro restart řadiče, což umožní přepis firmwaru novou verzí</li>
+          </ul>
+          <h3>Firmware</h3>
+          <p>Na řadiči poběží upravená verze QMK klávesnicového firmwaru, přizpůsobeného
+            pro podporu:
+          </p>
+          <ul>
+            <li>Rotačního enkodéru</li>
+            <li>Vrstev kláves (jako tlačítko Fn na notebooku)</li>
+            <li>Zvolené rozložení klávesnice (75 + Split space)</li>
+          </ul>
+          <h3>Rozložení klávesnice</h3>
+          <p>Aby návrh klávesnice splňil výše zmíněné podmínky, bude klávesnice
+            využívat evropeskou verzi 75% rozložení, s místem pro enkodér v pravém
+            horním rohu, a rozděleným mezierníkem pro speciální funkce, jako makro,
+            nebo přepínání funkčních vrstev klávesnice.
+          </p>
+          <figure>
+            <img src="images/keebLayout.png" alt="Zvolené rozložení klávesnice">
+          </figure>
         </section>
         <section>
           <h2>Praktická část</h2>

@@ -15,4 +15,4 @@ The Demos folder contains actual files I worked on in class.</p>
 
 * HTML5 file talking describing bachelor thesis
 * basic CSS without frameworks
-* using following elements: article, section, h1 - h3, aside, header, footer, naw
+* using following elements: article, section, h1 - h3, aside, header, footer, nav

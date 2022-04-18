@@ -7,8 +7,8 @@
   <title>Bakalářská práce</title>
   <link rel="stylesheet" href="style.css">
 </head>
-  <body>
-    <header>
+  <body class="container border">
+    <header class="header border">
       <h1>Návrh a implementace mechanické klávesnice s využitím mikrokontroleru</h1>
       <nav>
         <a href="#about">O práci</a>
@@ -16,7 +16,7 @@
         <a href="#praxe">Praktická část</a>
       </nav>
     </header>
-    <main>
+    <main class="main border">
       <article>
         <section>
           <a id="about"><h2>O práci</h2></a>
@@ -73,7 +73,7 @@
             nebo přepínání funkčních vrstev klávesnice.
           </p>
           <figure>
-            <img src="images/keebLayout.png" alt="Zvolené rozložení klávesnice">
+            <img id="rozlozeni"src="images/keebLayout.png" alt="Zvolené rozložení klávesnice">
           </figure>
         </section>
         <section>
@@ -84,17 +84,18 @@
             Na konec bude potřeba ručně napájet spínače do matice a poté k mikrořadiči.
           </p>
         </section>
-      </article>
-      <aside>
-        <h2>Zajímavé odkazy</h2>
-        <a href="https://openscad.org/">OpenSCAD</a>
-        <a href="https://code.visualstudio.com/">Visual Studio Code</a>
-        <a href="https://github.com/ZakKemble/AVRDUDESS">AVRDudess</a>
-        <a href="https://github.com/qmk/qmk_toolbox">QMK Toolbox</a>
-        <a href="https://github.com/sch3fr/culsMD">Repozitář této semestrálky na GitHubu</a>
-      </aside>
+      </article>      
     </main>
-    <footer>
+    <aside class="aside border">
+      <h2>Zajímavé odkazy</h2>
+      <a href="https://openscad.org/">OpenSCAD</a><br>
+      <a href="https://code.visualstudio.com/">Visual Studio Code</a><br>
+      <a href="https://github.com/ZakKemble/AVRDUDESS">AVRDudess</a><br>
+      <a href="https://github.com/qmk/qmk_toolbox">QMK Toolbox</a><br>
+      <a href="https://github.com/sch3fr/culsMD">Repozitář na GitHubu</a><br>
+      <a href="https://shorturl.at/uMZ17">Více info</a><br>
+    </aside>
+    <footer class="footer border">
       <p>xschf007, PEF ČZU, 2022</p>
     </footer>
   </body>

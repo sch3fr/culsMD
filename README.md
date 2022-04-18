@@ -13,6 +13,6 @@ The Demos folder contains actual files I worked on in class.</p>
 
 ### HTML project
 
-* HTML5 file talking describing bachelor thesis
+* ~~HTML5 file talking describing bachelor thesis~~ done ✅
 * basic CSS without frameworks
-* using following elements: article, section, h1 - h3, aside, header, footer, nav
+* ~~using following elements: article, section, h1 - h3, aside, header, footer, nav~~ done ✅
